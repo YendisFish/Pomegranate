@@ -1,0 +1,13 @@
+[Library]
+
+void outp(char *val, int length)
+{
+    asm
+    {
+        mov ebx, 1
+        mov edx, msglen
+        mov ecx, message
+        mov eax, 4
+        int 0x80
+    }
+}

@@ -1,0 +1,48 @@
+[Library]
+
+class string
+{
+    char *value;
+    int length;
+}
+
+string new_string(char *val)
+{
+    string *ret = stralloc();
+    ret->value = val;
+
+    int i = 0;
+    while(true)
+    {
+        if(val[i] != '\0')
+        {
+            i++
+            continue;
+        } else
+        {
+            break;
+        }
+    }
+
+    ret->length = i;
+}
+
+string add_strings(string one, string two)
+{
+
+}
+
+void string_free(string val)
+{
+    //frees the string
+}
+
+string change_index_of(string val, int index, char newval)
+{
+    string ret = stralloc();
+
+    val->value[index] = newval;
+    ret = value;
+
+    string_free(val);   
+}

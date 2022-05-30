@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PezYhL0JCywmyFCKO0REMPjfXeOrodCuWWiV2kuYCU0owUY+0cJBoIIAbSSergNgmfEhcw1vJ3xSrAWycMQiWg==",
+  "success": true,
+  "projectFilePath": "/home/snib/Pomegranate/Compiler/Compiler.csproj",
+  "expectedPackageFiles": [
+    "/home/snib/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
