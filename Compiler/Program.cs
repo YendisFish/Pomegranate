@@ -11,7 +11,7 @@ namespace Compiler
 
             foreach((Token token, string value, int[] indexes) v in vals)
             {
-                if(v.value is not "" && v.value is not "\n")
+                if(v.value is not "")
                 {
                     Console.WriteLine($"Token: {v.token} Value: {v.value}");
                 }

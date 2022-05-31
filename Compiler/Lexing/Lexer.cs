@@ -38,6 +38,23 @@ namespace Compiler.Lexing
                         continue;
                     }
 
+                    case '\n':
+                    {
+                        (Token token, string value, int[] indexes) fgparsed = ParseFragment(fgmnt, dxs);
+
+                        (Token token, string value, int[] indexes) val = new();
+                        val.token = Token.NEWLINE;
+                        val.value = "\\n";
+                        val.indexes = new int[] { i };
+
+                        ret.Add(fgparsed);
+                        ret.Add(val);
+
+                        fgmnt = "";
+
+                        continue;
+                    }
+
                     case '(':
                     {
                         (Token token, string value, int[] indexes) fgparsed = ParseFragment(fgmnt, dxs);

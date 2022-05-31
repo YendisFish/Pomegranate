@@ -33,6 +33,7 @@ namespace Compiler.Lexing
         TRANSFORM, //transform
         HEAPALLOC, //heapalloc
         WHITESPACE,
+        NEWLINE,
         SEMICOLON, //;
         COLON, //:
         QUOTE, //'

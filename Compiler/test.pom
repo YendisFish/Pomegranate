@@ -1,8 +1,7 @@
 external
 {
-    outp.pom
+    "outp.pom"
 }
-
 int main()
 {
     char *msg = "Hello World!";
