@@ -518,6 +518,26 @@ namespace Compiler.Lexing
                     return val;
                 }
 
+                case "external":
+                {
+                    (Token token, string value, int[] indexes) ret = new();
+                    ret.token = Token.EXTERNAL;
+                    ret.value = fg;
+                    ret.indexes = dxs.ToArray();
+                    
+                    return ret;
+                }
+
+                case "asm":
+                {
+                    (Token token, string value, int[] indexes) ret = new();
+                    ret.token = Token.ASM;
+                    ret.value = fg;
+                    ret.indexes = dxs.ToArray();
+                    
+                    return ret;
+                }
+
                 default:
                 {
                     (Token token, string value, int[] indexes) ret = new();

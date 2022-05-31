@@ -38,6 +38,8 @@ namespace Compiler.Lexing
         QUOTE, //'
         DOUBLEQUOTE, //" 
         ESCAPEINDICATOR, //\
-        NAME
+        NAME,
+        EXTERNAL, //external
+        ASM //asm
     }
 }
