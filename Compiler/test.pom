@@ -1,0 +1,5 @@
+int main()
+{
+    char *msg = "Hello World!";
+    outp(msg, 12);
+}

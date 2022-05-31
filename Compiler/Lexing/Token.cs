@@ -6,10 +6,12 @@ namespace Compiler.Lexing
         INT, //int
         BOOL, //bool
         BYTE, //byte
-        LB, //{
-        RB, //}
+        LB, //[
+        RB, //]
         LP, //(
         RP, //)
+        LCB, //{
+        RCB, //}
         COMMA, //,
         POINTERREF, //*
         POINTERDEREF, //&
@@ -29,6 +31,13 @@ namespace Compiler.Lexing
         DIVIDE, // /
         POWER, //^
         TRANSFORM, //transform
-        HEAPALLOC //heapalloc
+        HEAPALLOC, //heapalloc
+        WHITESPACE,
+        SEMICOLON, //;
+        COLON, //:
+        QUOTE, //'
+        DOUBLEQUOTE, //" 
+        ESCAPEINDICATOR, //\
+        NAME
     }
 }
